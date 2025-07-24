@@ -243,10 +243,10 @@ class: text-white
 
 </div>
 
-<div class="mt-12 text-center">
-<div class="inline-block p-6 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm">
-<div class="text-lg font-bold mb-2">💡 核心公式</div>
-<div class="text-xl">AI Agent = LLM + Tools + Memory + Planning</div>
+<div class="text-center">
+<div class="inline-block p-3 bg-black bg-opacity-30 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+<div class="text-lg font-bold mb-2 text-yellow-300">💡 核心公式</div>
+<div class="text-xl font-bold text-white drop-shadow-lg">AI Agent = LLM + Tools + Memory + Planning</div>
 </div>
 </div>
 
