@@ -191,6 +191,155 @@ layoutClass: gap-8
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-8
+---
+
+# 大模型训练原理解析
+
+## 🧠 Transformer架构突破
+
+<div class="space-y-4 text-sm">
+<div class="p-3 bg-blue-50 rounded border-l-4 border-blue-400">
+<strong>Self-Attention机制</strong><br>
+让模型能够关注输入序列中的任何位置，理解上下文关系
+</div>
+
+<div class="p-3 bg-green-50 rounded border-l-4 border-green-400">
+<strong>并行计算优势</strong><br>
+相比RNN的串行处理，Transformer支持并行训练，大幅提升效率
+</div>
+
+<div class="p-3 bg-purple-50 rounded border-l-4 border-purple-400">
+<strong>位置编码</strong><br>
+通过位置编码保持序列信息，解决了注意力机制的位置盲区
+</div>
+</div>
+
+## 📊 预训练范式
+
+<div class="space-y-3 text-sm">
+<div class="p-3 bg-orange-50 rounded border-l-4 border-orange-400">
+<strong>无监督学习</strong><br>
+在海量文本数据上进行自监督训练
+</div>
+
+<div class="p-3 bg-red-50 rounded border-l-4 border-red-400">
+<strong>下一词预测</strong><br>
+通过预测下一个词来学习语言模式
+</div>
+</div>
+
+::right::
+
+## 🔄 训练流程
+
+```mermaid {scale: 0.7}
+graph TD
+    A[海量文本数据] --> B[数据预处理]
+    B --> C[Tokenization]
+    C --> D[预训练 Pre-training]
+    D --> E[基础语言模型]
+    E --> F[指令微调 SFT]
+    F --> G[人类反馈强化学习 RLHF]
+    G --> H[对齐后的大模型]
+
+    style D fill:#e1f5fe
+    style F fill:#f3e5f5
+    style G fill:#fff3e0
+    style H fill:#e8f5e8
+```
+
+## 🎯 关键训练阶段
+
+<div class="space-y-3 text-xs">
+<div class="p-2 bg-blue-100 rounded">
+<strong>1. 预训练 (Pre-training)</strong><br>
+在数万亿token上学习基础语言能力
+</div>
+
+<div class="p-2 bg-purple-100 rounded">
+<strong>2. 监督微调 (SFT)</strong><br>
+使用高质量指令数据集进行有监督训练
+</div>
+
+<div class="p-2 bg-orange-100 rounded">
+<strong>3. 强化学习 (RLHF)</strong><br>
+通过人类反馈优化模型输出质量
+</div>
+
+<div class="p-2 bg-green-100 rounded">
+<strong>4. 安全对齐</strong><br>
+确保模型输出符合人类价值观
+</div>
+</div>
+
+<!--
+大模型的训练是一个复杂的多阶段过程，从基础的语言建模到最终的人类价值对齐，每个阶段都至关重要。
+-->
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80
+backgroundSize: cover
+---
+
+# 从大模型到AI Agent的能力跃迁
+
+<div class="space-y-6">
+
+<div class="p-4 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg">
+<div class="flex items-center space-x-3">
+<div class="text-2xl">📚</div>
+<div>
+<div class="font-bold text-blue-800">语言理解能力</div>
+<div class="text-sm text-blue-600">从简单的文本生成到复杂的语义理解</div>
+</div>
+</div>
+</div>
+
+<div class="p-4 bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg">
+<div class="flex items-center space-x-3">
+<div class="text-2xl">🧮</div>
+<div>
+<div class="font-bold text-green-800">推理计算能力</div>
+<div class="text-sm text-green-600">逻辑推理、数学计算、代码生成</div>
+</div>
+</div>
+</div>
+
+<div class="p-4 bg-gradient-to-r from-purple-100 to-violet-100 rounded-lg">
+<div class="flex items-center space-x-3">
+<div class="text-2xl">🛠️</div>
+<div>
+<div class="font-bold text-purple-800">工具调用能力</div>
+<div class="text-sm text-purple-600">Function Calling，与外部系统交互</div>
+</div>
+</div>
+</div>
+
+<div class="p-4 bg-gradient-to-r from-orange-100 to-red-100 rounded-lg">
+<div class="flex items-center space-x-3">
+<div class="text-2xl">🎯</div>
+<div>
+<div class="font-bold text-orange-800">目标规划能力</div>
+<div class="text-sm text-orange-600">任务分解、步骤规划、自主执行</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt-8 p-4 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg border-l-4 border-yellow-400">
+<div class="font-bold text-yellow-800 mb-2">🚀 关键转折点</div>
+<div class="text-yellow-700 text-sm">大模型具备工具调用能力后，从"智能对话"进化为"智能行动"，AI Agent时代正式开启</div>
+</div>
+
+<!--
+大模型能力的逐步提升为AI Agent的出现奠定了基础，特别是工具调用能力的突破，让AI从被动回答转向主动执行。
+-->
+
+---
 layout: center
 class: text-center
 ---
